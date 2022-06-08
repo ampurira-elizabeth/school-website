@@ -59,6 +59,7 @@ transition: 0.5s;
 }
 .text_box h1{
     font-size: 62px;
+    color: rgb(179, 13, 151);
 }
 .text_box p{
     margin: 10px 0 40px;
@@ -323,6 +324,60 @@ padding: 18px 0;
 }
 
 
+/* slides */
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+ 
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+ 
+.slide-wrapper {
+     
+    /* Calculate the total width on the
+  basis of number of slides */
+    width: calc(728px * 4);
+    animation: slide 10s ease infinite;
+}
+ 
+
+/* .slide:nth-child(1) {
+    background: green;
+}
+ 
+.slide:nth-child(2) {
+    background: pink;
+}
+ 
+.slide:nth-child(3) {
+    background: red;
+}
+ 
+.slide:nth-child(4) {
+    background: yellow;
+} */
+ 
+@keyframes slide {
+     
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+  }
 
 
 
